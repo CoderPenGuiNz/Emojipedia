@@ -1,8 +1,16 @@
 import React from 'react'
 
-function Content() {
+function Content(props) {
   return (
-    <div>Content</div>
+     <div className="term">
+    <dt>
+      <span className="emoji" role="img" >
+        {props.emoji}
+      </span>
+      <span>{props.name}</span>
+    </dt>
+    <dd>{props.meaning}</dd>
+  </div>
   )
 }
 

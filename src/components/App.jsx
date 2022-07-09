@@ -8,7 +8,15 @@ function App() {
   return (
     <div>
         <Header />
-        <Content />
+        
+        <dl className="dictionary"> {emojipedia.map(item => <Content
+        key={item.id}
+        emoji={item.emoji}
+        name={item.name}
+        meaning={item.meaning}
+
+        />)}</dl>
+        
         <Footer />
     </div>
   )
